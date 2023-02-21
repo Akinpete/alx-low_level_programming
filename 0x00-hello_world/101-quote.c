@@ -1,13 +1,18 @@
-#include <unistd.h>
+#include<unistd.h>
 
-int main(void) {
-    const char* message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-    const int length = 37;
-    const int file_descriptor = 2; // 2 is the standard error file descriptor
+/**
+ * main - Entry point
+ *
+ * Description: print a quote using write function
+ *    ssize_t write(int fd, const void *buf, size_t count);
+ *
+ * Return: This time we return an error 1.
+*/
 
-    // Write the message to the standard error
-    write(file_descriptor, message, length);
+int main(void)
+{
+	char quo[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-    return 1;
+	write(1, quo, 59);
+	return (1);
 }
-
