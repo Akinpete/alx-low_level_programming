@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * main - check the code for ALX School students.
- *
+ * main - check the code
  * Return: Always 0.
-*/
-
+ */
 int main(void)
 {
 	char *str;
@@ -13,4 +11,4 @@ int main(void)
 	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
 	print_rev(str);
 	return (0);
-i}
+}
