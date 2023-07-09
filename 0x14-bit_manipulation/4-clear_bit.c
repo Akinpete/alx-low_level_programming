@@ -3,7 +3,7 @@
 
 /**
  * clear_bit - sets the value of a bit to 0.
- * 
+ *
  * @n: points to unsigned integer.
  * @index: index of the bit in question.
  *
